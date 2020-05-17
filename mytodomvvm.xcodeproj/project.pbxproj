@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		3ED3B7C224711DC40065436B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ED3B7C024711DC40065436B /* LaunchScreen.storyboard */; };
 		3ED3B7CD24711DC40065436B /* mytodomvvmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED3B7CC24711DC40065436B /* mytodomvvmTests.swift */; };
 		3ED3B7D824711DC40065436B /* mytodomvvmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED3B7D724711DC40065436B /* mytodomvvmUITests.swift */; };
+		EF13AB1E751E8F7C3358258B /* Pods_mytodomvvm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D123446307CBC6DD16CBA2D /* Pods_mytodomvvm.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,9 @@
 		3ED3B7D324711DC40065436B /* mytodomvvmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mytodomvvmUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ED3B7D724711DC40065436B /* mytodomvvmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mytodomvvmUITests.swift; sourceTree = "<group>"; };
 		3ED3B7D924711DC40065436B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D123446307CBC6DD16CBA2D /* Pods_mytodomvvm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mytodomvvm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8773CD533CED21F022ACBDFF /* Pods-mytodomvvm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mytodomvvm.debug.xcconfig"; path = "Target Support Files/Pods-mytodomvvm/Pods-mytodomvvm.debug.xcconfig"; sourceTree = "<group>"; };
+		8F1DD906D19FEA5D8E3CC235 /* Pods-mytodomvvm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mytodomvvm.release.xcconfig"; path = "Target Support Files/Pods-mytodomvvm/Pods-mytodomvvm.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF13AB1E751E8F7C3358258B /* Pods_mytodomvvm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +81,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14B7769DEA680F11DECF285D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8773CD533CED21F022ACBDFF /* Pods-mytodomvvm.debug.xcconfig */,
+				8F1DD906D19FEA5D8E3CC235 /* Pods-mytodomvvm.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		3ED3B7A924711DC30065436B = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +97,8 @@
 				3ED3B7CB24711DC40065436B /* mytodomvvmTests */,
 				3ED3B7D624711DC40065436B /* mytodomvvmUITests */,
 				3ED3B7B324711DC30065436B /* Products */,
+				14B7769DEA680F11DECF285D /* Pods */,
+				D3A86B6453E7A858E3EDCF2D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +115,9 @@
 		3ED3B7B424711DC30065436B /* mytodomvvm */ = {
 			isa = PBXGroup;
 			children = (
+				3ED3B7E7247122C40065436B /* Model */,
+				3ED3B7E6247122BE0065436B /* ViewModel */,
+				3ED3B7E5247122980065436B /* View */,
 				3ED3B7B524711DC30065436B /* AppDelegate.swift */,
 				3ED3B7B724711DC30065436B /* SceneDelegate.swift */,
 				3ED3B7B924711DC30065436B /* ContentView.swift */,
@@ -136,6 +155,35 @@
 			path = mytodomvvmUITests;
 			sourceTree = "<group>";
 		};
+		3ED3B7E5247122980065436B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3ED3B7E6247122BE0065436B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3ED3B7E7247122C40065436B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D3A86B6453E7A858E3EDCF2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D123446307CBC6DD16CBA2D /* Pods_mytodomvvm.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +191,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3ED3B7DC24711DC40065436B /* Build configuration list for PBXNativeTarget "mytodomvvm" */;
 			buildPhases = (
+				C35C0B21E598B9AA62EF8176 /* [CP] Check Pods Manifest.lock */,
 				3ED3B7AE24711DC30065436B /* Sources */,
 				3ED3B7AF24711DC30065436B /* Frameworks */,
 				3ED3B7B024711DC30065436B /* Resources */,
+				2DC6925F7EB19AA3830494A5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -261,6 +311,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2DC6925F7EB19AA3830494A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mytodomvvm/Pods-mytodomvvm-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mytodomvvm/Pods-mytodomvvm-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mytodomvvm/Pods-mytodomvvm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C35C0B21E598B9AA62EF8176 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mytodomvvm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3ED3B7AE24711DC30065436B /* Sources */ = {
@@ -432,6 +524,7 @@
 		};
 		3ED3B7DD24711DC40065436B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8773CD533CED21F022ACBDFF /* Pods-mytodomvvm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,6 +545,7 @@
 		};
 		3ED3B7DE24711DC40065436B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F1DD906D19FEA5D8E3CC235 /* Pods-mytodomvvm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
